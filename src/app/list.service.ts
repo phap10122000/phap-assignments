@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
-// import {data} from './MockApp';
 import { List } from './List';
 import { HttpClient} from '@angular/common/http';
 import { Observable} from 'rxjs';
-  import { from } from 'rxjs';
+import { from } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class ListService {
   // products = data;
-  api = 'https://http://5e79ba9717314d0016133574.mockapi.io/list'
+  api = 'https://5e79ba9717314d0016133574.mockapi.io/list';
   constructor(
     private http: HttpClient
   ) { }
@@ -18,9 +17,9 @@ export class ProductService {
     return this.http.get<List[]>(this.api);
     // return this.products;
   }
-  ListProduc(id): Observable<List>{
-    return this.http.get<List>(`${this.api}/${id}`);
-  }
+  // ListProduc(id): Observable<List>{
+  //   return this.http.get<List>(`${this.api}/${id}`);
+  // }
   // addProducts(product): Observable<Product> {
   //   return this.http.post<Product>(`${this.api}`, product);
     
