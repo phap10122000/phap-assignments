@@ -27,12 +27,9 @@
                "src/css/style.css",
                "src/css/bootstrap.min.css",
                "src/css/easy-responsive-tabs.css"
-
+        
             ],
-            "scripts": [
-              "../node_modules/jquery/dist/jquery..min.js",
-               "../node_modules/bootstrap/dist/js/bootstrap.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

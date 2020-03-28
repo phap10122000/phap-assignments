@@ -8,6 +8,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { RequirementsComponent } from './requirements/requirements.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'list', component: ProductListComponent},
   { path: 'requirement', component: RequirementsComponent},
   { path: 'team', component: TeamComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'admin', component: AdminComponent}
   // { path: 'contact', component: ContactComponent},
   // { path: 'manager', component: ProductManagerComponent},
   // { path: 'manager/edit/:id', component: ProductEditComponent},
