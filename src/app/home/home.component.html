@@ -1,3 +1,85 @@
-<app-product-slide></app-product-slide>
-<br>
-<app-product-list></app-product-list>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+
+<body>
+
+	<div class="header">
+
+		<div class="nav">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="https://weneedfun.com/wp-content/uploads/2015/10/Online-Games-1.png" width="250" height="50" alt="logo"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+							<li><a routerLink="/about" routerLinkActive="active">About</a></li>
+							<li><a routerLink="/requirement" routerLinkActive="active">Requirements</a></li>
+							<li><a routerLink="/game" routerLinkActive="active">Games</a></li>
+							<li><a routerLink="/team" routerLinkActive="active">Team</a></li>
+							<li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+						</ul>
+
+					</div><!-- navbar-collapse -->
+				</div><!-- container -->
+			</nav>
+		</div> <!-- Nav Ends -->
+
+		<div class="banner" id="home">
+			<div class="container">
+				<!-- <div class="banner-content">
+					<h1>PUBG Gamers</H1>
+					<h2>Modern Online Gaming Template For Action Games </h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's
+						standard dummy text </p>
+				</div> -->
+			</div>
+		</div> <!-- Banner Ends Here -->
+	</div> <!-- Header Ends -->
+  <router-outlet></router-outlet>
+
+
+
+
+	<!--Plug-in Initialisation-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			//Vertical Tab
+			$('#parentVerticalTab').easyResponsiveTabs({
+				type: 'vertical', //Types: default, vertical, accordion
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				tabidentify: 'hor_1', // The tab groups identifier
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#nested-tabInfo2');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+		});
+	</script>
+	<!-- Up Coming Games Ends Here -->
+
+
+</body>
+
