@@ -13,6 +13,7 @@ import { ProductSlideComponent } from './product-slide/product-slide.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ListService } from './list.service';
 
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule ],
   declarations: [ AppComponent, HelloComponent, HomeComponent, MenComponent, WomenComponent, KidzComponent, ProductListComponent, ProductSlideComponent, ProductDetailComponent ],
