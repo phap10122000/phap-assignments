@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { from } from 'rxjs';
+import { Product } from '../Product';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-admin-manager',
@@ -6,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-manager.component.css']
 })
 export class AdminManagerComponent implements OnInit {
-
-  constructor() { }
+   products: Product[];
+  selected: Product;
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
+     this.getProducts();
   }
-
+    showDetail(product) {
+    this.selected = product;
+  }
+  getProducts() {
+    this.productService.listProducts().subscribe(data =>{
+      this.products = data;
+    })
+    // this.products = this.productService.listProducts();
+  }
 }

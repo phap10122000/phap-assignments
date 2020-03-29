@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { from } from 'rxjs';
 import { Product } from '../Product';
-import { ListService } from './list.service';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-admin-list',
@@ -12,9 +12,18 @@ import { ListService } from './list.service';
 export class AdminListComponent implements OnInit {
   products: Product[];
   selected: Product;
-  constructor(private productService: ListService) { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
+    this.getProducts();
   }
-
+  showDetail(product) {
+    this.selected = product;
+  }
+  getProducts() {
+    this.productService.listProducts().subscribe(data =>{
+      this.products = data;
+    })
+    // this.products = this.productService.listProducts();
+  }
 }
