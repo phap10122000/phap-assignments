@@ -23,11 +23,14 @@ const routes: Routes = [
   { path: 'requirement', component: RequirementsComponent},
   { path: 'team', component: TeamComponent},
   { path: 'contact', component: ContactComponent},
-  { path: 'admin', component: AdminComponent},
-  { path: 'admin/list', component: AdminListComponent},
-  // { path: 'contact', component: ContactComponent},
-  { path: 'admin/manager', component: AdminManagerComponent},
-  { path: 'manager/edit/:id', component: AdminManagerComponent},
+  { path: 'admin', component: AdminComponent,
+    children: [
+        { path: '', redirectTo: 'list', pathMatch: 'full'},
+        { path: 'list', component: AdminListComponent},
+        { path: 'manager', component: AdminManagerComponent},
+  // { path: 'manager/edit/:id', component: AdminManagerComponent},
+    ]
+    }
   // { path: 'manager/:id', component: ProductDetailComponent}
   // { path: '**', component:}
 ];
