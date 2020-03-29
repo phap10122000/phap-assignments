@@ -16,11 +16,13 @@ import { AdminComponent } from './admin/admin.component';
 import { RequirementsComponent } from './requirements/requirements.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminListComponent } from './admin/admin-list/admin-list.component';
+import { AdminManagerComponent } from './admin/admin-manager/admin-manager.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,NgbModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductSlideComponent, ProductDetailComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductSlideComponent, ProductDetailComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent, AdminListComponent, AdminManagerComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ListService]
 })

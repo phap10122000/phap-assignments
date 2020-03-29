@@ -1,0 +1,35 @@
+<h2>Add Product</h2>
+<button class="btn btn-primary w-40" routerLink="/add">Add Product</button><br>
+<br>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Desc</th>
+      <th scope="col">Status</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <th scope="row">{{product.id}}</th>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.notes}}</td>
+      <td>{{product.status? 'Còn hàng' : 'Hết hàng'}}</td>
+      <td>
+        <button class="btn btn-primary " routerLink="/list/{{product.id}}">Detail!</button>
+        <!-- <button class="btn btn-primary " (click)="showDetail(product)">Detail</button> -->
+        <button class="btn btn-primary " (click)="removeitem(product.id)">Delete</button>
+        <button class="btn btn-primary " routerLink="/manager/edit/{{product.id}}">Edit</button>
+      </td>
+    </tr>
+
+  </tbody>
+
+</table>
+<!-- <div *ngIf="selected">
+  <app-product-detail [product]="selected"></app-product-detail>
+</div> -->
