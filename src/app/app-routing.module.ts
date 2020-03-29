@@ -24,9 +24,9 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'admin', component: AdminComponent},
-  { path: 'list', component: AdminListComponent},
+  { path: 'admin/list', component: AdminListComponent},
   // { path: 'contact', component: ContactComponent},
-  { path: 'manager', component: AdminManagerComponent},
+  { path: 'admin/manager', component: AdminManagerComponent},
   { path: 'manager/edit/:id', component: AdminManagerComponent},
   // { path: 'manager/:id', component: ProductDetailComponent}
   // { path: '**', component:}
