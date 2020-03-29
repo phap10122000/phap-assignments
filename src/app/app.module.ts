@@ -6,10 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import { ProductSlideComponent } from './product-slide/product-slide.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ListService } from './list.service';
 import { AboutComponent } from './about/about.component';
 import { GameComponent } from './game/game.component';
 import { AdminComponent } from './admin/admin.component';
@@ -22,8 +19,8 @@ import { AdminManagerComponent } from './admin/admin-manager/admin-manager.compo
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,NgbModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductListComponent, ProductSlideComponent, ProductDetailComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent, AdminListComponent, AdminManagerComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductSlideComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent, AdminListComponent, AdminManagerComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [ListService]
+  providers: []
 })
 export class AppModule { }
