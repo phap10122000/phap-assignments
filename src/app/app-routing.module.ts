@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminManagerComponent } from './admin/admin-manager/admin-manager.component';
 import { AdminListComponent } from './admin/admin-list/admin-list.component';
+import { AdminAddComponent } from './admin/admin-add/admin-add.component';
 
 
 
@@ -28,6 +29,7 @@ const routes: Routes = [
         { path: '', redirectTo: 'list', pathMatch: 'full'},
         { path: 'list', component: AdminListComponent},
         { path: 'manager', component: AdminManagerComponent},
+        { path: 'add', component: AdminAddComponent}
   // { path: 'manager/edit/:id', component: AdminManagerComponent},
     ]
     }
