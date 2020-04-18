@@ -25,4 +25,9 @@ export class AdminManagerComponent implements OnInit {
     })
     // this.products = this.productService.listProducts();
   }
+   removeitem(id) {
+    this.productService.removeProducts(id).subscribe(Response =>{
+      this.products = this.products.filter(product => product.id !== id);
+  })
+  }
 }
