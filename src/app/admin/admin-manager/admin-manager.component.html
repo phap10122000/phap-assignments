@@ -57,7 +57,7 @@
       <td>{{product.desc}}</td>
       <!-- <td>{{product.status? 'Còn hàng' : 'Hết hàng'}}</td> -->
       <td>
-        <button class="btn btn-primary " routerLink="/list/{{product.id}}">Detail!</button>
+        <button class="btn btn-primary " routerLink="/admin/detail/{{product.id}}">Detail!</button>
         <!-- <button class="btn btn-primary " (click)="showDetail(product)">Detail</button> -->
         <button class="btn btn-primary " (click)="removeitem(product.id)">Delete</button>
         <button class="btn btn-primary " routerLink="/admin/edit/{{product.id}}">Edit</button>

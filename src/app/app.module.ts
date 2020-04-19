@@ -19,11 +19,12 @@ import { AdminManagerComponent } from './admin/admin-manager/admin-manager.compo
 import { ProductService } from './product.service';
 import { AdminAddComponent } from './admin/admin-add/admin-add.component';
 import { AdminEditComponent } from './admin/admin-edit/admin-edit.component';
+import { AdminDetailComponent } from './admin/admin-detail/admin-detail.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,NgbModule,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductSlideComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent, AdminListComponent, AdminManagerComponent, AdminAddComponent, AdminEditComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductSlideComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent, AdminListComponent, AdminManagerComponent, AdminAddComponent, AdminEditComponent, AdminDetailComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
