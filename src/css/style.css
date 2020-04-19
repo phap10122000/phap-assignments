@@ -354,7 +354,7 @@ body {
 
 /* ---------- Requirements Starts ---------- */
 .requirement {
-    background: url("../images/require.jpg") 0px 0px no-repeat;
+    background: url("https://i.imgur.com/ZXAgX6A.jpg") 0px 0px no-repeat;
     width: 100%;
     background-size: cover;
     font-family: "Abel-Regular";
@@ -383,6 +383,7 @@ body {
 }
 
 .grid {
+   /* background: url("https://i.imgur.com/JrFi6PF.png") no-repeat 0px 0px; */
     background: rgba(41, 40, 40, 0.7);
     padding: 50px 0;
     height: 475px;
@@ -392,7 +393,7 @@ body {
     display: inline-block;
     width: 64px;
     height: 64px;
-    background: url("../images/icons.png") no-repeat 0px 0px;
+    background: url("https://i.imgur.com/JrFi6PF.png") 0px 0px no-repeat ;
     padding-bottom: 75px;
     text-decoration: none;
 }
@@ -618,7 +619,7 @@ ul.social li a {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: url("../images/img-sprite.png") no-repeat 0px 0px;
+    background: url("https://i.imgur.com/T5eEL0y.png") no-repeat 0px 0px;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;

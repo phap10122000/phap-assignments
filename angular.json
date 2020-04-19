@@ -25,8 +25,9 @@
             "styles": [
               "src/styles.css",
                "src/css/style.css",
-               "src/css/bootstrap.min.css",
-               "src/css/easy-responsive-tabs.css"
+               "src/css/easy-responsive-tabs.css",
+               "src/css/bootstrap.min.css"
+               
         
             ],
             "scripts": []
