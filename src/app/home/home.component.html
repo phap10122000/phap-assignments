@@ -21,8 +21,21 @@ Author URL: http://w3layouts.com
 			window.scrollTo(0, 1);
 		}
 	</script>
+	<!--//for-mobile-apps-->
 
-
+	<!-- Custom-Theme-Files -->
+	<!-- Bootstrap-CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/easy-responsive-tabs.css " />
+	<!-- Index-Page-Styling -->
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
+	<!-- JQuery -->
+	<script src="/js/jquery.min.js"> </script>
+	<!-- Bootstrap-Main -->
+	<script src="/js/bootstrap.min.js"> </script>
+	<!-- Start-Smooth-Scrolling -->
+	<script type="text/javascript" src="/js/move-top.js"></script>
+	<script type="text/javascript" src="/js/easing.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -35,7 +48,7 @@ Author URL: http://w3layouts.com
 	</script>
 	<!-- //End-Smooth-Scrolling -->
 
-	<!-- <script src="js/easyResponsiveTabs.js"></script> -->
+	<script src="/js/easyResponsiveTabs.js"></script>
 
 </head>
 
@@ -64,8 +77,8 @@ Author URL: http://w3layouts.com
 
 						<ul class="nav navbar-nav navbar-right">
 							<li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-							<li><a routerLink="/about" routerLinkActive="active">About</a></li>
-              <!-- <li><a href="#about" class="scroll">About</a></li> -->
+							<!-- <li><a routerLink="/about" routerLinkActive="active">About</a></li> -->
+              <li><a href="about" class="scroll">About</a></li>
 							<li><a routerLink="/requirement" routerLinkActive="active">Requirements</a></li>
 							<li><a routerLink="/game" routerLinkActive="active">Games</a></li>
 							<li><a routerLink="/team" routerLinkActive="active">Team</a></li>
