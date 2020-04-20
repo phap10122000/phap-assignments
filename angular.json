@@ -30,7 +30,13 @@
                
         
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/bootstrap.min.js",
+              "src/js/easing.js",
+              "src/js/easyResponsiveTabs.js",
+              "src/js/jquery.min.js",
+              "src/js/move-top.js"
+            ]
           },
           "configurations": {
             "production": {
