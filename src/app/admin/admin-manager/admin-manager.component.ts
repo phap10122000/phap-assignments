@@ -9,6 +9,11 @@ import { ProductService } from '../product.service';
   styleUrls: ['./admin-manager.component.css']
 })
 export class AdminManagerComponent implements OnInit {
+  page = 1;
+  pageSize = 4;
+  collectionSize = Product.length;
+  // api = 'https://5e79ba9717314d0016133574.mockapi.io/list'
+  
    products: Product[];
   selected: Product;
   constructor(private productService: ProductService) { }
@@ -30,4 +35,6 @@ export class AdminManagerComponent implements OnInit {
       this.products = this.products.filter(product => product.id !== id);
   })
   }
+
+  
 }
