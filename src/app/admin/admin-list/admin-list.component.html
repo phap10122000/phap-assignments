@@ -38,10 +38,14 @@
 <!-- <div *ngIf="selected">
   <app-product-detail [product]="selected"></app-product-detail>
 </div> -->
+<br>
+  <h4>All Product</h4>
+  <h1>Game Online</h1>
+  <br>
 <div class="row">
   <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
     <div class="card h-100">
-      <a href="#"><img class="card-img-top" [src]="product.image" alt=""></a>
+      <a href="#"><img class="card-img-top" [src]="product.image" alt=""  height="350px"></a>
       <div class="card-body">
         <h4 class="card-title">
           <a href="#">{{product.name}}</a>
@@ -54,7 +58,7 @@
         <!-- <button class="btn btn-primary" (click)="changeStatus()">Click me!</button> -->
         <!-- <button class="btn btn-primary " routerLink="/manager/{{product.id}}">Chi Tiết!</button> -->
         <button class="btn btn-primary " routerLink="/admin/detail/{{product.id}}">Chi Tiết!</button>
-        <button class="btn btn-primary " (click)="removeitem(product.id)">Delete</button>
+        <!-- <button class="btn btn-primary " (click)="removeitem(product.id)">Delete</button> -->
         <!-- <input type="text" (keyup)="changeName($event)"/> -->
         <!-- <input type="text" [(ngModel)]='product.name'/> -->
         <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
