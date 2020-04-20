@@ -13,6 +13,7 @@ import { AdminListComponent } from './admin/admin-list/admin-list.component';
 import { AdminAddComponent } from './admin/admin-add/admin-add.component';
 import { AdminEditComponent } from './admin/admin-edit/admin-edit.component';
 import { AdminDetailComponent } from './admin/admin-detail/admin-detail.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 
 
 
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'admin', component: AdminComponent,
     children: [
-        { path: '', redirectTo: 'list', pathMatch: 'full'},
+        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+        { path: 'dashboard', component: AdminDashboardComponent},
         { path: 'list', component: AdminListComponent},
         { path: 'manager', component: AdminManagerComponent},
         { path: 'detail/:productID', component: AdminDetailComponent},
