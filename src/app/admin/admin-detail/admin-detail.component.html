@@ -1,8 +1,15 @@
-<p *ngIf="product">
-    Detail !<br>
-    Id : {{product.id}}<br>
-    Images : {{product.image}}<br>
-    Name : {{product.name}}<br>
-    Price: {{product.price}}<br>
-    Desc: {{product.desc}}<br>
-</p>
+<div  class="row" *ngIf="product">
+<div class="col-lg-0 col-md-20 mb-0">
+		<div class="card h-100" >
+			<a href="#"><img class="card-img-top" alt="" ></a>
+				<div class="card-body" >
+    <!-- Detail !<br> -->
+    <h4>Id : {{product.id}}</h4>
+     <img width="250px" height="230px" class="img ml-2" alt="" src={{product.image}}>
+    <h4>Name : {{product.name}}</h4>
+    <h5>Price: {{product.price}}</h5>
+    <h5>Desc: {{product.desc}}</h4>
+
+				</div>
+		</div>
+</div>
