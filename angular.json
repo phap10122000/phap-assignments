@@ -22,16 +22,20 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.css",
-               "src/css/style.css",
-               "src/css/easy-responsive-tabs.css",
-               "src/css/bootstrap.min.css"
+            "styles": [                                     
+               "src/styles.css",
+               
+                
+              
+                "src/css/bootstrap.min.css",
+                "src/css/easy-responsive-tabs.css",
+                
+                "src/css/style.css"
                
         
             ],
             "scripts": [
-              "src/js/bootstrap.min.js",
+              
               "src/js/easing.js",
               "src/js/easyResponsiveTabs.js",
               "src/js/jquery.min.js",
