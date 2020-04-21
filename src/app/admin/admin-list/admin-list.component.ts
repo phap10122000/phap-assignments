@@ -12,6 +12,9 @@ import { ProductService } from '../product.service';
 export class AdminListComponent implements OnInit {
   products: Product[];
   selected: Product;
+   page = 1;
+  pageSize = 3;
+  // collectionSize = Product.length;
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
