@@ -14,7 +14,7 @@ export class AdminListComponent implements OnInit {
   selected: Product;
    page = 1;
   pageSize = 3;
-  // collectionSize = Product.length;
+  collectionSize = Product.length;
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
