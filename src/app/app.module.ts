@@ -21,10 +21,11 @@ import { AdminAddComponent } from './admin/admin-add/admin-add.component';
 import { AdminEditComponent } from './admin/admin-edit/admin-edit.component';
 import { AdminDetailComponent } from './admin/admin-detail/admin-detail.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,AppRoutingModule,NgbModule,HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule,AppRoutingModule,NgbModule,HttpClientModule,Ng2SearchPipeModule ],
   declarations: [ AppComponent, HelloComponent, HomeComponent, ProductSlideComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent, AdminListComponent, AdminManagerComponent, AdminAddComponent, AdminEditComponent, AdminDetailComponent, AdminDashboardComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]

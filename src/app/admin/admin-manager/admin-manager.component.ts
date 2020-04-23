@@ -12,6 +12,7 @@ export class AdminManagerComponent implements OnInit {
   page = 1;
   pageSize = 4;
   collectionSize = Product.length;
+  searchText;
   // api = 'https://5e79ba9717314d0016133574.mockapi.io/list'
   
    products: Product[];
