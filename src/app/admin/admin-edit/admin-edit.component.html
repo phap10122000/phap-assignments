@@ -7,15 +7,6 @@
     </div> -->
     <div [hidden]="productForm.submitted">
       <div class="cross-validation" [class.cross-validation-error]="productForm.errors?.identityRevealed && (productForm.touched || productForm.dirty)">
-     <div class="form-group">
-      <label for="exampleInputEmail1">Images : </label>
-      <input type="text" class="form-control" name="image" [(ngModel)]="product.image" #image="ngModel"required>
-    </div>
-    	<div *ngIf="image.invalid" class="alert alert-danger">
-					<div *ngIf="image.errors.required">
-						Image is required.
-					</div>
-				</div>
     <div class="form-group">
       <label for="exampleInputEmail1">Product name : </label>
       <input type="text" class="form-control" name="name" [(ngModel)]="product.name" #name="ngModel" minlength="2" required>
@@ -28,6 +19,15 @@
 				Names must be at least 2 characters long.
 			</div>
 		</div>
+     <div class="form-group">
+      <label for="exampleInputEmail1">Images : </label>
+      <input type="text" class="form-control" name="image" [(ngModel)]="product.image" #image="ngModel"required>
+    </div>
+    	<div *ngIf="image.invalid" class="alert alert-danger">
+					<div *ngIf="image.errors.required">
+						Image is required.
+					</div>
+				</div>
     <div class="form-group">
       <label for="">Price :</label>
       <input type="text" class="form-control" name="price" [(ngModel)]="product.price" #price="ngModel"min="0" required>
@@ -52,5 +52,5 @@
     <button  class="btn btn-primary" [disabled]="productForm.invalid" (click)="submitForm()">Update</button>
       </div>
     </div>
-  </form>
+</form>
   
