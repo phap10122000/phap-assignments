@@ -13,7 +13,7 @@ export class AdminListComponent implements OnInit {
   products: Product[];
   selected: Product;
    page = 1;
-  pageSize = 3;
+  pageSize = 6;
   collectionSize = Product.length;
   constructor(private productService: ProductService) { }
 
