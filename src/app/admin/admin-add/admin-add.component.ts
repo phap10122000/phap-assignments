@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../Product';
 import { ProductService } from '../product.service';
 import { ActivatedRoute, Router } from "@angular/router";
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-admin-add',
@@ -15,8 +15,7 @@ export class AdminAddComponent implements OnInit {
     submitted = false;
   constructor(private productService: ProductService,
     private route: ActivatedRoute,
-    private router: Router,
-    private formBuilder: FormBuilder) { }
+    private router: Router) { }
 
   ngOnInit() {
     // this.validateEmail();
@@ -37,7 +36,7 @@ export class AdminAddComponent implements OnInit {
   //           validator: MustMatch('password', 'confirmPassword')
   //       });
   // }
-    get f() { return this.registerForm.controls; }
+
 
     // onSubmit() {
     //     this.submitted = true;
