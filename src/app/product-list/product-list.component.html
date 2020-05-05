@@ -1,7 +1,8 @@
-
+<br>
 <br>
   <div class="body-list">
   <h1><span class="about">Game Online</span></h1>
+  <br>
 <div class="row">
   <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products |slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
     <div class="card h-100">
@@ -17,8 +18,8 @@
       <div class="card-footer">
         <!-- <button class="btn btn-primary " routerLink="/admin/detail/{{product.id}}">Chi Tiết!</button> -->
         <!-- <button class="btn btn-primary ">Buy !</button> -->
-         <button class="btn btn-primary " routerLink="/detail/{{product.id}}">Detail!</button>
-        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+         <button class="btn btn-danger " routerLink="/deatils/{{product.id}}"><h4>Product Detail !</h4></button>
+        <!-- <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small> -->
       </div>
     </div>
     <br>

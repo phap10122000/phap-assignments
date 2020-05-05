@@ -22,11 +22,13 @@ import { AdminEditComponent } from './admin/admin-edit/admin-edit.component';
 import { AdminDetailComponent } from './admin/admin-detail/admin-detail.component';
 import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,AppRoutingModule,NgbModule,HttpClientModule,Ng2SearchPipeModule ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductSlideComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent, AdminListComponent, AdminManagerComponent, AdminAddComponent, AdminEditComponent, AdminDetailComponent, AdminDashboardComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ProductSlideComponent, AboutComponent, GameComponent, AdminComponent, RequirementsComponent, TeamComponent, ContactComponent, AdminListComponent, AdminManagerComponent, AdminAddComponent, AdminEditComponent, AdminDetailComponent, AdminDashboardComponent, ProductDetailComponent, ProductListComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })

@@ -1,9 +1,3 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
-
-
 <head>
 	<title>Online Gaming a Games Category Flat Bootstrap Responsive Website Template :: w3layouts</title>
 	<!--for-mobile-apps-->
@@ -24,10 +18,10 @@ Author URL: http://w3layouts.com
 
 	<!-- Custom-Theme-Files -->
 	<!-- Bootstrap-CSS -->
-	<link rel="stylesheet" href="/src/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/src/css/easy-responsive-tabs.css"/>
+	<!-- <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/src/css/easy-responsive-tabs.css"/> -->
 	<!-- Index-Page-Styling -->
-	<link rel="stylesheet" href="/src/css/style.css" type="text/css" media="all">
+	<!-- <link rel="stylesheet" href="/src/css/style.css" type="text/css" media="all"> -->
 	<!-- JQuery -->
 	<script src="/js/jquery.min.js"> </script>
 	<!-- Bootstrap-Main -->
@@ -104,38 +98,41 @@ Author URL: http://w3layouts.com
 		</div> <!-- Banner Ends Here -->
     </div>
 	</div> <!-- Header Ends -->
-  <router-outlet></router-outlet>
-
-
-
-
-	<!--Plug-in Initialisation-->
-	<script type="text/javascript">
-		$(document).ready(function () {
-
-			//Vertical Tab
-			$('#parentVerticalTab').easyResponsiveTabs({
-				type: 'vertical', //Types: default, vertical, accordion
-				width: 'auto', //auto or any width like 600px
-				fit: true, // 100% fit in a container
-				closed: 'accordion', // Start closed if in accordion view
-				tabidentify: 'hor_1', // The tab groups identifier
-				activate: function (event) { // Callback function if tab is switched
-					var $tab = $(this);
-					var $info = $('#nested-tabInfo2');
-					var $name = $('span', $info);
-					$name.text($tab.text());
-					$info.show();
-				}
-			});
-		});
-	</script>
-	<!-- Up Coming Games Ends Here -->
-
-
- <!-- <app-admin-list></app-admin-list> -->
- <app-product-list></app-product-list>
- <br>
- <app-contact></app-contact>
+<br>
+<br>
+  <div class="body-list">
+  <h1><span class="about">Product Detail</span></h1>
+  <br>
+<div class="row">
+  <div *ngIf="product">
+    <div class="card h-100">
+      <a href="#"><img class="card-img-top" [src]="product.image" alt=""  height="33px" width="500px"></a>
+      <div class="card-body">
+        <h2 class="card-title">
+         Name: {{product.name}}
+        </h2>
+        <h4>Price: {{product.price}}</h4>
+        <h4 class="card-text">Desc: {{product.desc}}</h4>
+        <!-- <p class="card-text">{{product.status ? 'hết':'còn'}}</p> -->
+      </div>
+      <div class="card-footer">
+        <!-- <button class="btn btn-primary " routerLink="/admin/detail/{{product.id}}">Chi Tiết!</button> -->
+        
+         <!-- <button class="btn btn-danger " routerLink="/detail/{{product.id}}"><h4>Product Detail !</h4></button> -->
+        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+        <br>
+        <br>
+        <button class="btn btn-primary " routerLink="/home" routerLinkActive="active">Back</button> |
+        <button class="btn btn-danger ">Buy !</button>       
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
+<br>
+  </div>
 
 
