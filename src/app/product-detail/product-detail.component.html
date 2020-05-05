@@ -100,13 +100,17 @@
 	</div> <!-- Header Ends -->
 <br>
 <br>
-  <div class="body-list">
+  <div class="ab-info-main py-5">
   <h1><span class="about">Product Detail</span></h1>
   <br>
-<div class="row">
+  <br>
+<div class="container py-3">
   <div *ngIf="product">
-    <div class="card h-100">
+    <!-- <div class="card h-100"> -->
+      <div class="col-md-6 contact-right-content">
       <a href="#"><img class="card-img-top" [src]="product.image" alt=""  height="330px" width="500px"></a>
+      </div>
+      <div class="col-md-5 contact-left-content">
       <div class="card-body">
         <h2 class="card-title">
          Name: {{product.name}}
@@ -123,8 +127,9 @@
         <br>
         <br>
         <button class="btn btn-primary " routerLink="/home" routerLinkActive="active">Back</button> |
-        <button class="btn btn-danger ">Buy !</button>       
-      </div>
+        <button class="btn btn-danger ">Buy !</button>    
+      </div>   
+      <!-- </div> -->
     </div>
     <br>
     <br>
@@ -134,5 +139,6 @@
 </div>
 <br>
   </div>
+  <app-contact></app-contact>
 
 
